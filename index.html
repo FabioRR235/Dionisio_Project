@@ -14,15 +14,8 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg bg-p">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img
-              src="images/logo.png"
-              alt="Logo"
-            width="125"
-            />
-          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -34,23 +27,117 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link header-itens" aria-current="page" href="#"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="#">Sobre</a>
+                <a
+                  class="nav-link header-itens"
+                  aria-current="page"
+                  href="destaques.html"
+                  >Destaques</a
+                >
+              </li>
+            </ul>
+            <div class="logo">
+              <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="Logo" width="125" />
+              </a>
+            </div>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link header-itens" aria-current="page" href="#"
+                  >Galeria</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="#">Galeria</a>
+                <a class="nav-link header-itens" aria-current="page" href="#"
+                  >Contato</a
+                >
               </li>
-
+            </ul>
           </div>
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <h1 class="mvp-text">
+        "Explore. Sinta. Reviva. Somos apaixonados por captar a beleza da
+        aventura em cada imagem, registrando suas conquistas com autenticidade e
+        ousadia."
+      </h1>
+      <div class="d-flex justify-content-center">
+        <img class="bounce-anime" src="images/arrow-down.svg" alt="" />
+      </div>
+      <div class="d-flex justify-content-center">
+        <a href="destaques.html">
+          <button class="m-5 text-uppercase rounded-3">Saiba Mais!</button>
+        </a>
+      </div>
+
+      <footer class="footer">
+        <div class="footer_container">
+          <div class="footer_top">
+            <div class="d-flex justify-content-between">
+              <!-- <h6 class="footer_title">Desenvolvido por:</h6> -->
+              <ul class="footer_list">
+                <li class="footer_list-item">
+                  <a href="#" class="footer_list-link">Fábio Matheus Rabello</a>
+                </li>
+                <li>
+                  <span class="copyright"
+                    >&copy; Direitos Autorais Reservados</span
+                  >
+                </li>
+              </ul>
+              <ul class="footer_list flex-row">
+                <li>
+                  <img
+                    class="footer_icons"
+                    src="images/instagram-icon.svg"
+                    alt=""
+                  />
+                </li>
+                <li>
+                  <img
+                    class="footer_icons"
+                    src="images/linkedin-icon.svg"
+                    alt=""
+                  />
+                </li>
+                <li>
+                  <img
+                    class="footer_icons"
+                    src="images/whats-icon.svg"
+                    alt=""
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+          <hr class="footer_divider" />
+          <div class="footer_bottom">
+            <ul class="footer_list footer_list--bottom">
+              <li class="footer_list-link">
+                <a
+                  href="mailto:fabiorabello235@gmail.com"
+                  class="footer_list-link"
+                >
+                  <p class="footer_list-link">Contate-nos</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </main>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
