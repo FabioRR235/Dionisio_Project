@@ -1,0 +1,17 @@
+:root {
+  --primary: #badf96;
+  --secondary: #693e52;
+  --terciary: #1c1124;
+  --aux: #f7ffcd;
+  --white: #fff;
+  --black: #000;
+}
+
+body {
+  background: var(--terciary) !important;
+}
+
+.carrousel-img {
+  border-radius: 16px;
+  height: 500px;
+}
