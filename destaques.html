@@ -16,7 +16,10 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-p">
+      <nav
+        class="navbar navbar-expand-lg bg-p rounded-bottom"
+        data-anime="down"
+      >
         <div class="container-fluid">
           <button
             class="navbar-toggler"
@@ -91,7 +94,7 @@
         </div>
       </section>
       <section class="mb-5">
-        <div id="destaquesCarrousel" class="carousel slide w-50 m-auto">
+        <div id="destaquesCarrousel" class="carousel slide w-75 m-auto">
           <div class="carousel-indicators">
             <button
               type="button"
@@ -192,8 +195,10 @@
       </section>
       <section>
         <h2 class="text-center text-white m-3">Fotográfos Destaques</h2>
-        <div class="d-flex align-items-center justify-content-center gap-5 m-5">
-          <div class="card" style="width: 20rem">
+        <div
+          class="d-flex flex-lg-row flex-md-row flex-column align-items-center justify-content-center gap-5 m-5"
+        >
+          <div class="card" data-anime="up" style="width: 20rem">
             <img
               src="images/perfil-img/Lucas_Santana.jpg"
               class="card-img-top"
@@ -209,7 +214,7 @@
               </p>
             </div>
           </div>
-          <div class="card" style="width: 20rem">
+          <div class="card" data-anime="up" style="width: 20rem">
             <img
               src="images/perfil-img/Marina_Oliveira.jpg"
               class="card-img-top"
@@ -225,7 +230,7 @@
               </p>
             </div>
           </div>
-          <div class="card" style="width: 20rem">
+          <div class="card" data-anime="up" style="width: 20rem">
             <img
               src="images/perfil-img/Paula_Mendes.jpg"
               class="card-img-top"
@@ -256,7 +261,9 @@
     <footer class="footer">
       <div class="footer_container">
         <div class="footer_top">
-          <div class="d-flex justify-content-between">
+          <div
+            class="d-flex flex-lg-row flex-md-row flex-column justify-content-between"
+          >
             <ul class="footer_list">
               <li class="footer_list-item">
                 <a href="#" class="footer_list-link">Fábio Matheus Rabello</a>
@@ -272,18 +279,22 @@
                 <img
                   class="footer_icons"
                   src="images/instagram-icon.svg"
-                  alt=""
+                  alt="instagram_logo"
                 />
               </li>
               <li>
                 <img
                   class="footer_icons"
                   src="images/linkedin-icon.svg"
-                  alt=""
+                  alt="linkedin_logo"
                 />
               </li>
               <li>
-                <img class="footer_icons" src="images/whats-icon.svg" alt="" />
+                <img
+                  class="footer_icons"
+                  src="images/whats-icon.svg"
+                  alt="whats_logo"
+                />
               </li>
             </ul>
           </div>
@@ -313,5 +324,6 @@
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script>
+    <script src="scripts/animate.js"></script>
   </body>
 </html>

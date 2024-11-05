@@ -17,7 +17,10 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-p">
+      <nav
+        class="navbar navbar-expand-lg bg-p rounded-bottom"
+        data-anime="down"
+      >
         <div class="container-fluid">
           <button
             class="navbar-toggler"
@@ -80,46 +83,68 @@
       </nav>
     </header>
     <main>
-      <section><h1>Contato</h1></section>
       <section>
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label"
-            >Email address</label
-          >
-          <input
-            type="email"
-            class="form-control"
-            id="exampleFormControlInput1"
-            placeholder="name@example.com"
-          />
+        <h1 class="text-center text-white mt-3">Conheça-nos melhor</h1>
+        <p class="text-center text-white fs-3 m-lg-0 m-2">
+          Agende um visita e venha fazer parte da <span>nossa</span> aventura!
+        </p>
+        <div class="d-flex justify-content-center m-5">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7354.130548005508!2d-45.26042005431198!3d-22.83707442936538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ccc3a9161f1f63%3A0xf4e7b612c20f1e5b!2sPotim%2C%20SP%2C%2012525-000!5e0!3m2!1spt-BR!2sbr!4v1730808673315!5m2!1spt-BR!2sbr"
+            width="1200"
+            height="600"
+            style="border: 1px solid"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
-        <label for="subject-select">Select</label>
-        <select
-          id="subject-select"
-          class="form-select"
-          aria-label="Default select example"
+      </section>
+      <section>
+        <h1 class="text-center text-white m-lg-0 m-2">
+          Quer nos deixar uma mensagem, ou reclamação?
+        </h1>
+        <div
+          class="d-flex flex-column justify-content-center w-75 m-auto card-form p-5 mb-5"
         >
-          <option selected>Open this select menu</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-        </select>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label"
-            >Example textarea</label
-          >
-          <textarea
-            class="form-control"
-            id="exampleFormControlTextarea1"
-            rows="3"
-          ></textarea>
+          <form action="#">
+            <div class="mb-3">
+              <label for="email" class="form-label fw-bold">E-mail:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="jhonatam@email.com"
+              />
+            </div>
+            <label for="subject-select" class="fw-bold">Assunto:</label>
+            <select
+              id="subject-select"
+              class="form-select"
+              aria-label="Default select example"
+            >
+              <option selected>Selecione uma Opção</option>
+              <option value="1">Agendar Visita</option>
+              <option value="2">Reclamação, ou Critica</option>
+              <option value="3">Outro...</option>
+            </select>
+            <div class="mb-3">
+              <label for="textArea" class="form-label fw-bold"
+                >Sua Mensagem:</label
+              >
+              <textarea class="form-control" id="textArea" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-light">Enviar</button>
+          </form>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="footer_container">
         <div class="footer_top">
-          <div class="d-flex justify-content-between">
+          <div
+            class="d-flex flex-lg-row flex-md-row flex-column justify-content-between"
+          >
             <ul class="footer_list">
               <li class="footer_list-item">
                 <a href="#" class="footer_list-link">Fábio Matheus Rabello</a>
@@ -135,18 +160,22 @@
                 <img
                   class="footer_icons"
                   src="images/instagram-icon.svg"
-                  alt=""
+                  alt="instagram_logo"
                 />
               </li>
               <li>
                 <img
                   class="footer_icons"
                   src="images/linkedin-icon.svg"
-                  alt=""
+                  alt="linkedin_logo"
                 />
               </li>
               <li>
-                <img class="footer_icons" src="images/whats-icon.svg" alt="" />
+                <img
+                  class="footer_icons"
+                  src="images/whats-icon.svg"
+                  alt="whats_logo"
+                />
               </li>
             </ul>
           </div>
@@ -176,5 +205,6 @@
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script>
+    <script src="scripts/animate.js"></script>
   </body>
 </html>

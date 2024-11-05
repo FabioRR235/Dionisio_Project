@@ -43,3 +43,13 @@ body {
 .btn-home:active {
   transform: scale(0.9);
 }
+
+@media (max-width: 450px) {
+  /* #destaquesCarrousel {
+    width: 75% !important;
+  } */
+  .carrousel-img {
+    height: 325px;
+    object-fit: cover;
+  }
+}

@@ -17,7 +17,10 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-p">
+      <nav
+        class="navbar navbar-expand-lg bg-p rounded-bottom"
+        data-anime="down"
+      >
         <div class="container-fluid">
           <button
             class="navbar-toggler"
@@ -80,12 +83,64 @@
       </nav>
     </header>
     <main>
-      <section><h1>Galeria</h1></section>
+      <section>
+        <h1 class="text-center text-white m-5">Nossa Galeria</h1>
+        <div class="grid-container">
+          <!-- Insira 12 imagens aleatórias -->
+          <div class="grid-item" data-anime="up">
+            <img
+              src="images/carrousel-img/torres_del_paine.jpg"
+              alt="imagem_torres_del_paine"
+            />
+          </div>
+          <div class="grid-item" data-anime="up">
+            <img src="images/galeria/deserto1.jpg" alt="imagem_deserto_1" />
+          </div>
+          <div class="grid-item" data-anime="up">
+            <img src="images/galeria/montanha1.jpg" alt="imagem_montanha_1" />
+          </div>
+          <div class="grid-item" data-anime="up">
+            <img src="images/carrousel-img/tromso.jpg" alt="imagem_tromso" />
+          </div>
+          <div class="grid-item" data-anime="up">
+            <img
+              src="images/carrousel-img/barreira_corais.jpg"
+              alt="imagem_barreira_corais"
+            />
+          </div>
+          <div class="grid-item" data-anime="up">
+            <img src="images/galeria/tundra.jpg" alt="imagem_tundra" />
+          </div>
+          <div class="grid-item" data-anime="up">
+            <img src="images/galeria/floresta1.jpg" alt="imagem_floresta_1" />
+          </div>
+          <div class="grid-item" data-anime="up">
+            <img
+              src="images/carrousel-img/victoria_fallls.jpg"
+              alt="imagem_victoria_falls"
+            />
+          </div>
+          <div class="grid-item" data-anime="up">
+            <img src="images/zebra-wild.jpg" alt="imagem_zebra_floresta" />
+          </div>
+          <div class="grid-item" data-anime="up">
+            <img src="images/galeria/montanha2.jpg" alt="imagem_montranha_2" />
+          </div>
+          <div class="grid-item" data-anime="up">
+            <img src="images/galeria/deserto2.jpg" alt="imagem_deserto_2" />
+          </div>
+          <div class="grid-item" data-anime="up">
+            <img src="images/galeria/floresta2.jpg" alt="imagem_floresta_2" />
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="footer_container">
         <div class="footer_top">
-          <div class="d-flex justify-content-between">
+          <div
+            class="d-flex flex-lg-row flex-md-row flex-column justify-content-between"
+          >
             <ul class="footer_list">
               <li class="footer_list-item">
                 <a href="#" class="footer_list-link">Fábio Matheus Rabello</a>
@@ -101,18 +156,22 @@
                 <img
                   class="footer_icons"
                   src="images/instagram-icon.svg"
-                  alt=""
+                  alt="instagram_logo"
                 />
               </li>
               <li>
                 <img
                   class="footer_icons"
                   src="images/linkedin-icon.svg"
-                  alt=""
+                  alt="linkedin_logo"
                 />
               </li>
               <li>
-                <img class="footer_icons" src="images/whats-icon.svg" alt="" />
+                <img
+                  class="footer_icons"
+                  src="images/whats-icon.svg"
+                  alt="whats_logo"
+                />
               </li>
             </ul>
           </div>
@@ -142,5 +201,6 @@
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script>
+    <script src="scripts/animate.js"></script>
   </body>
 </html>

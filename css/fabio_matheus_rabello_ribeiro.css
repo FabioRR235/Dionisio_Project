@@ -28,8 +28,20 @@ body::before {
   display: flex;
   text-align: center;
   color: var(--white);
-  font-size: 56px;
+  font-size: 2rem;
   margin: 15vh 35vh;
+}
+
+@media (max-width: 800px) {
+  .mvp-text {
+    margin: 15vh auto;
+  }
+}
+@media (max-width: 450px) {
+  .mvp-text {
+    margin: 6vh 2vh;
+    font-size: 1rem;
+  }
 }
 
 .bounce-anime {

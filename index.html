@@ -16,7 +16,10 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-p">
+      <nav
+        class="navbar navbar-expand-lg bg-p rounded-bottom"
+        data-anime="down"
+      >
         <div class="container-fluid">
           <button
             class="navbar-toggler"
@@ -79,13 +82,17 @@
       </nav>
     </header>
     <main>
-      <h1 class="mvp-text">
+      <h1 class="mvp-text" data-anime="fade">
         "Explore. Sinta. Reviva. Somos apaixonados por captar a beleza da
         aventura em cada imagem, registrando suas conquistas com autenticidade e
         ousadia."
       </h1>
       <div class="d-flex justify-content-center">
-        <img class="bounce-anime" src="images/arrow-down.svg" alt="" />
+        <img
+          class="bounce-anime"
+          src="images/arrow-down.svg"
+          alt="seta-para_baixo"
+        />
       </div>
       <div class="d-flex justify-content-center">
         <a href="destaques.html">
@@ -98,7 +105,9 @@
     <footer class="footer">
       <div class="footer_container">
         <div class="footer_top">
-          <div class="d-flex justify-content-between">
+          <div
+            class="d-flex flex-lg-row flex-md-row flex-column justify-content-between"
+          >
             <ul class="footer_list">
               <li class="footer_list-item">
                 <a href="#" class="footer_list-link">Fábio Matheus Rabello</a>
@@ -114,18 +123,22 @@
                 <img
                   class="footer_icons"
                   src="images/instagram-icon.svg"
-                  alt=""
+                  alt="instagram_logo"
                 />
               </li>
               <li>
                 <img
                   class="footer_icons"
                   src="images/linkedin-icon.svg"
-                  alt=""
+                  alt="linkedin_logo"
                 />
               </li>
               <li>
-                <img class="footer_icons" src="images/whats-icon.svg" alt="" />
+                <img
+                  class="footer_icons"
+                  src="images/whats-icon.svg"
+                  alt="whats_logo"
+                />
               </li>
             </ul>
           </div>
@@ -155,5 +168,6 @@
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script>
+    <script src="scripts/animate.js"></script>
   </body>
 </html>
